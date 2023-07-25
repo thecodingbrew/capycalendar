@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/thecodingbrew/capycalendar/issues"
   },
-  "homepage": "https://github.com/thecodingbrew/capycalendar#readme"
+  "homepage": "https://github.com/thecodingbrew/capycalendar#readme",
+  "devDependencies": {
+    "jest": "^29.6.1"
+  }
 }
