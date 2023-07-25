@@ -1,5 +1,9 @@
 const monthDaysCalculator = {
   getDaysInMonth: (year, month) => {
+    //error if month input is incorrect
+    if (month < 1 || month > 12) {
+        throw new Error("Invalid month. Month must be between 1 and 12.");
+      }
       // months with 30 days
     if ([4, 6, 9, 11].includes(month)) {
       return 30;
@@ -14,5 +18,5 @@ const monthDaysCalculator = {
     // other months have 31 days
     return 31;
   }
-}
- console.log(monthDaysCalculator.getDaysInMonth(2021, 2)); 
+};
+module.exports = monthDaysCalculator;
