@@ -1,0 +1,24 @@
+{
+  "name": "capycalendar",
+  "version": "1.0.0",
+  "description": "Javascript calendar library from capybaras",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thecodingbrew/capycalendar.git"
+  },
+  "keywords": [
+    "calendar",
+    "library",
+    "js"
+  ],
+  "author": "vladislava_sim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thecodingbrew/capycalendar/issues"
+  },
+  "homepage": "https://github.com/thecodingbrew/capycalendar#readme"
+}
