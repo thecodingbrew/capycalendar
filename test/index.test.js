@@ -12,8 +12,48 @@ const testCases = [
 
 testCases.forEach((testCase) => {
   const { year, month, expected } = testCase;
-  test(`getDaysInMonth returns ${expected} for ${year}-${month}`, () => {
+  (`getDaysInMonth returns ${expected} for ${year}-${month}`, () => {
     const result = monthDaysCalculator.getDaysInMonth(year, month);
     expect(result).toBe(expected);
+  });
+});
+
+// Test cases
+const leapYearTestCases = [
+  { year: 2000, expected: true },
+  { year: 2004, expected: true },
+  { year: 2019, expected: false },
+  { year: 2024, expected: true },
+  { year: 2021, expected: false },
+];
+
+// Test cases for non-leap years
+const nonLeapYearTestCases = [
+  { year: 1900, expected: false },
+  { year: 1800, expected: false },
+  { year: 2100, expected: false },
+  { year: 2019, expected: false },
+  { year: 2021, expected: false },
+];
+
+describe("monthDaysCalculator", () => {
+  describe("checkIfLeapYear", () => {
+    // Test cases for leap years
+    leapYearTestCases.forEach((testCase) => {
+      const { year, expected } = testCase;
+      test(`checkIfLeapYear returns true for leap year ${year}`, () => {
+        const result = monthDaysCalculator.checkIfLeapYear(year);
+        expect(result).toBe(expected);
+      });
+    });
+
+    // Test cases for non-leap years
+    nonLeapYearTestCases.forEach((testCase) => {
+      const { year, expected } = testCase;
+      test(`checkIfLeapYear returns false for non-leap year ${year}`, () => {
+        const result = monthDaysCalculator.checkIfLeapYear(year);
+        expect(result).toBe(expected);
+      });
+    });
   });
 });
