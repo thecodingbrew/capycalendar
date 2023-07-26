@@ -2,9 +2,10 @@
   "name": "capycalendar",
   "version": "1.0.0",
   "description": "Javascript calendar library from capybaras",
-  "main": "index.js",
+  "main": "dist/capycalendar-bundle.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest", 
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -30,3 +31,4 @@
     "webpack-cli": "^5.1.4"
   }
 }
+
