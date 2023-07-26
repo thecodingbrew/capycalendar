@@ -1,7 +1,7 @@
 const monthDaysCalculator = {
   getDaysInMonth: (year, month) => {
     //error if month input is incorrect
-    if(!year.isInteger() || !month.isInteger()) {
+    if(!Number.isInteger(year) || !Number.isInteger(month)) {
       throw new Error('Error: year and month must be integer numbers')
     }
     if (month < 1 || month > 12) {
@@ -22,7 +22,7 @@ const monthDaysCalculator = {
     return 31;
   },
   checkIfLeapYear: (year) => {
-    if(year.isInteger()) {
+    if(Number.isInteger(year)) {
       if (year % 4 === 0 && (year % 100 !== 0 || year % 400 === 0)) {
         return true; // leap year
       } else {
