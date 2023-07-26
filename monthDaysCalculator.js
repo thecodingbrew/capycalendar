@@ -17,6 +17,13 @@ const monthDaysCalculator = {
       }
     // other months have 31 days
     return 31;
+  },
+  checkIfLeapYear: (year) => {
+    if (year % 4 === 0 && (year % 100 !== 0 || year % 400 === 0)) {
+      return true; // leap year
+    } else {
+      return false; // non-leap year
+    }
   }
 };
 module.exports = monthDaysCalculator;
