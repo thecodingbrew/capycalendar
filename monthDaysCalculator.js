@@ -1,5 +1,5 @@
 const monthDaysCalculator = {
-  getDaysInMonth: (year, month) => {
+  getDaysInMonth: (year = new Date().getFullYear(), month) => {
     //error if month input is incorrect
     if(!Number.isInteger(year) || !Number.isInteger(month)) {
       throw new Error('Error: year and month must be integer numbers')

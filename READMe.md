@@ -36,7 +36,7 @@ console.log(is2024LeapYear); // Output: true
 ### getDaysInMonth(year, month)
 Calculate the number of days in a specific month.
 
-#### 'year' (number): The year (e.g., 2023).
+#### 'year' (number): The year (e.g., 2023). This parameter is optional
 #### 'month' (number): The month (1 to 12).
 Returns the number of days in the specified month.
 
