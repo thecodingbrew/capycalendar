@@ -1,5 +1,5 @@
 // const monthDaysCalculator = require("../index"); //import module for testing
-import { getDaysInMonth, checkIfLeapYear } from "../index.js";
+import { getDaysInMonth, checkIfLeapYear } from "../index";
 
 
 // Test cases

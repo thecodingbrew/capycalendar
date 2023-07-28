@@ -1,3 +1,6 @@
-const monthDaysCalculator = require('./monthDaysCalculator');
+import { getDaysInMonth, checkIfLeapYear } from './monthDaysCalculator';
 
-module.exports = monthDaysCalculator;
+export {
+  getDaysInMonth,
+  checkIfLeapYear,
+};
