@@ -1,4 +1,6 @@
-const monthDaysCalculator = require("../index"); //import module for testing
+// const monthDaysCalculator = require("../index"); //import module for testing
+import { getDaysInMonth, checkIfLeapYear } from "../index.js";
+
 
 // Test cases
 const testCases = [
@@ -13,7 +15,7 @@ const testCases = [
 testCases.forEach((testCase) => {
   const { year, month, expected } = testCase;
   (`getDaysInMonth returns ${expected} for ${year}-${month}`, () => {
-    const result = monthDaysCalculator.getDaysInMonth(year, month);
+    const result = getDaysInMonth(year, month);
     expect(result).toBe(expected);
   });
 });
@@ -42,7 +44,7 @@ describe("monthDaysCalculator", () => {
     leapYearTestCases.forEach((testCase) => {
       const { year, expected } = testCase;
       test(`checkIfLeapYear returns true for leap year ${year}`, () => {
-        const result = monthDaysCalculator.checkIfLeapYear(year);
+        const result = checkIfLeapYear(year);
         expect(result).toBe(expected);
       });
     });
@@ -51,7 +53,7 @@ describe("monthDaysCalculator", () => {
     nonLeapYearTestCases.forEach((testCase) => {
       const { year, expected } = testCase;
       test(`checkIfLeapYear returns false for non-leap year ${year}`, () => {
-        const result = monthDaysCalculator.checkIfLeapYear(year);
+        const result = checkIfLeapYear(year);
         expect(result).toBe(expected);
       });
     });
