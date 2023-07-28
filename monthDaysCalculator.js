@@ -1,4 +1,4 @@
-const monthDaysCalculator = {
+export const monthDaysCalculator = {
   getDaysInMonth: (year = new Date().getFullYear(), month) => {
     //error if month input is incorrect
     if(!Number.isInteger(year) || !Number.isInteger(month)) {

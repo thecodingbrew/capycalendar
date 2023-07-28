@@ -1,1 +1,6 @@
-!function(t,e){"object"==typeof exports&&"object"==typeof module?module.exports=e():"function"==typeof define&&define.amd?define("monthDaysCalculator",[],e):"object"==typeof exports?exports.monthDaysCalculator=e():t.monthDaysCalculator=e()}(self,(()=>{return t={497:(t,e,o)=>{var r=o(342);t.exports=r},342:t=>{var e={getDaysInMonth:function(t,e){if(e<1||e>12)throw new Error("Invalid month. Month must be between 1 and 12.");return[4,6,9,11].includes(e)?30:2===e?t%4!=0||t%100==0&&t%400!=0?28:29:31}};t.exports=e}},e={},function o(r){var n=e[r];if(void 0!==n)return n.exports;var a=e[r]={exports:{}};return t[r](a,a.exports,o),a.exports}(497);var t,e}));
+var a = (t, o) => () => (o || t((o = { exports: {} }).exports, o), o.exports);
+var s = a((l, r) => {
+  const e = require("./monthDaysCalculator");
+  r.exports = e;
+});
+export default s();
