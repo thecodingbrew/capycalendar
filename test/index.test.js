@@ -1,6 +1,4 @@
-// const monthDaysCalculator = require("../index"); //import module for testing
-import { getDaysInMonth, checkIfLeapYear } from "../index";
-
+import { checkIfLeapYear, getDaysInMonth } from "../dist/capycalendar.es.js";
 
 // Test cases
 const testCases = [

@@ -1,4 +1,4 @@
-import { getDaysInMonth, checkIfLeapYear } from './monthDaysCalculator';
+import { getDaysInMonth, checkIfLeapYear } from './monthDaysCalculator.js';
 
 export {
   getDaysInMonth,

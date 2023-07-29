@@ -3,10 +3,15 @@
   "version": "1.0.0",
   "description": "Javascript calendar library from capybaras",
   "type": "module",
-  "main": "dist/capycalendar.js",
+  "main": "dist/capycalendar.es.js",
   "scripts": {
-    "test": "jest",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
     "build": "vite build"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/capycalendar.es.js"
+    }
   },
   "repository": {
     "type": "git",
