@@ -13,7 +13,7 @@ npm install capycalendar
 ## Usage
 
 ```javascript
-const capycalendar = require('capycalendar');
+import { checkIfLeapYear, getDaysInMonth } from "capycalendar";
 ```
 
 ## Get Days in a Month
@@ -21,14 +21,14 @@ const capycalendar = require('capycalendar');
 You can use the getDaysInMonth function to calculate the number of days in a specific month:
 
 ```javascript
-const daysInMarch2023 = capycalendar.getDaysInMonth(2023, 3);
+const daysInMarch2023 = getDaysInMonth(2023, 3);
 console.log(daysInMarch2023); // Output: 31
 ```
 
 ## Check if a Year is a Leap Year
 
 ```javascript
-const is2024LeapYear = capycalendar.isLeapYear(2024);
+const is2024LeapYear = isLeapYear(2024);
 console.log(is2024LeapYear); // Output: true
 ```
 ## API Reference
